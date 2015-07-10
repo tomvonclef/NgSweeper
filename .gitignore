@@ -1,3 +1,10 @@
+# Auto-generated js and js.map
+app/*.js
+app/*.js.map
+
+# DefinitelyTyped files
+tools/typings/*
+
 # Logs
 logs
 *.log
@@ -29,4 +36,6 @@ node_modules
 # Dependency directory
 bower_components/
 
+# OSX clutter
 .DS_Store
+

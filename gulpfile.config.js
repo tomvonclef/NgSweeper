@@ -12,7 +12,7 @@ var GulpConfig = (function () {
 
         this.typings = './tools/typings/';
         this.libraryTypeScriptDefinitions = './tools/typings/**/*.ts';
-        this.appTypeScriptReferences = this.typings + 'typescriptApp.d.ts';
+        this.appTypeScriptReferences = this.typings + 'ngsweeper.d.ts';
     }
     return GulpConfig;
 })();

@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     tsc = require('gulp-typescript'),
     tslint = require('gulp-tslint'),
     sourcemaps = require('gulp-sourcemaps'),
+    tsd = require('gulp-tsd'),
     del = require('del'),
     Config = require('./gulpfile.config');
 
@@ -34,9 +35,21 @@ gulp.task('ts-lint', function () {
 });
 
 /**
+ * Download TypeScript Definition files from DefinitielyTyped via tsd
+ */
+gulp.task('download-ts-typings', function (callback) {
+    tsd({
+        command: 'reinstall',
+        config: './tsd.json'
+    }, callback);
+});
+
+/**
  * Compile TypeScript and include references to library and app .d.ts files.
  */
-gulp.task('compile-ts', function () {
+gulp.task('compile-ts', ['download-ts-typings'], function () {
+
+
     var sourceTsFiles = [config.allTypeScript,                //path to typescript files
                          config.libraryTypeScriptDefinitions, //reference to library .d.ts files
                          config.appTypeScriptReferences];     //reference to app.d.ts files
