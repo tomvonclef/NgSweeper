@@ -1,6 +1,6 @@
 # Auto-generated js and js.map
-app/*.js
-app/*.js.map
+app/**/*.js
+app/**/*.js.map
 
 # DefinitelyTyped files
 tools/typings/*
