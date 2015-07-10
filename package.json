@@ -1,7 +1,7 @@
 {
   "name": "NgSweeper",
   "version": "0.1.0",
-  "description": "A starter project for AngularJS",
+  "description": "A fun practice program. MineSweeper written for evergreen browsers in AngularJS.",
   "repository": "https://github.com/tomvonclef/NgSweeper",
   "license": "MIT",
   "devDependencies": {
