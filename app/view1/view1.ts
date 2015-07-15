@@ -1,4 +1,4 @@
-'use strict';
+/// <reference path="../../tools/typings/angularjs/angular.d.ts" />
 
 angular.module('myApp.view1', ['ngRoute'])
 
