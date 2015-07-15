@@ -10,11 +10,11 @@ Written in TypeScript 1.5.
 ## Installation
 Type
 `npm install`
+at the command line.
 
 ## Running
 Type
 `npm start`
+at the command line.
 
-Go to the URL:
-
-http://localhost:8000/
+Navigate to the URL: http://localhost:8000/
