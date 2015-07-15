@@ -14,3 +14,7 @@ Type
 ## Running
 Type
 `npm start`
+
+Go to the URL:
+
+http://localhost:8000/
